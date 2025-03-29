@@ -26,7 +26,7 @@ async function listCommand() {
     JSON.stringify({
       name: config.scenarios.map((s) => s.name),
       include: config.scenarios,
-    }) + "\n"
+    })
   );
 }
 

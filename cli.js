@@ -23,11 +23,10 @@ async function main() {
 async function listCommand() {
   const config = await loadConfig();
   process.stdout.write(
-    JSON.stringify(
-      { name: config.scenarios.map((s) => s.name), include: config.scenarios },
-      null,
-      2
-    ) + "\n"
+    JSON.stringify({
+      name: config.scenarios.map((s) => s.name),
+      include: config.scenarios,
+    }) + "\n"
   );
 }
 

@@ -1,5 +1,5 @@
 {
-  "name": "embroider-try",
+  "name": "@embroider/try",
   "version": "0.0.1",
   "description": "Helper for trying multiple compatibility scenarios in CI",
   "bin": "cli.js",

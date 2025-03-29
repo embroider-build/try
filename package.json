@@ -1,0 +1,14 @@
+{
+  "name": "embroider-try",
+  "version": "0.0.1",
+  "description": "Helper for trying multiple compatibility scenarios in CI",
+  "bin": "cli.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Edward Faulkner <edward@eaf4.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.4.1"
+}

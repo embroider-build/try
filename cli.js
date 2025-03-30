@@ -1,5 +1,5 @@
-import { resolve } from "node:path";
-import { readFileSync, writeFileSync } from "node:fs";
+import { resolve, dirname } from "node:path";
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
 async function main() {
   const command = process.argv[2];
@@ -68,6 +68,17 @@ async function applyScenario(scenario) {
       }
     }
   }
+
+  if (scenario.files) {
+    for (let [filename, content] of Object.entries(scenario.files)) {
+      const fullName = resolve(process.cwd(), filename);
+      mkdirSync(dirname(fullName), {
+        recursive: true,
+      });
+      writeFileSync(fullName, content);
+    }
+  }
+
   writeFileSync(pkgJSONPath, JSON.stringify(pkg, null, 2));
   process.stdout.write(`Applied scenario ${scenario.name}\n`);
 }

@@ -20,12 +20,18 @@ async function main() {
   }
 }
 
+function normalizeScenario(scenario) {
+  // always include an empty env by default, so that it's convenient to pass
+  // `${{ matrix.env }}` in github actions
+  return { env: {}, ...scenario };
+}
+
 async function listCommand() {
   const config = await loadConfig();
   process.stdout.write(
     JSON.stringify({
       name: config.scenarios.map((s) => s.name),
-      include: config.scenarios,
+      include: config.scenarios.map((s) => normalizeScenario(s)),
     })
   );
 }

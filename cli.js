@@ -63,7 +63,10 @@ async function loadConfig() {
       const { default: _config } = await import(resolve(process.cwd(), candidate));
       config = _config;
     } catch (e) {
-
+      if ('message' in e && e.message.includes('Cannot find module')) {
+        continue;
+      }
+      throw e;
     }
 
     return config;

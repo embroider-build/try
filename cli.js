@@ -51,9 +51,25 @@ async function applyCommand() {
   await applyScenario(scenario);
 }
 
+const configExtensions = [".js", ".mjs"];
+const configLocations = [".try", "config/try"];
+const configCandidates = configLocations.flatMap((dir) =>
+  configExtensions.map((ext) => `${dir}${ext}`))
+
 async function loadConfig() {
-  const { default: config } = await import(resolve(process.cwd(), ".try.mjs"));
-  return config;
+  for (let candidate of configCandidates) {
+    let config;
+    try {
+      const { default: _config } = await import(resolve(process.cwd(), candidate));
+      config = _config;
+    } catch (e) {
+
+    }
+
+    return config;
+  }
+
+  throw new Error(`Could not find config for in one of the expected locations: ${configCandidates.join(", ")}`);
 }
 
 async function applyScenario(scenario) {

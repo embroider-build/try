@@ -1,5 +1,6 @@
 import { resolve, dirname } from "node:path";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { pathToFileURL } from "node:url";
 
 async function main() {
   const command = process.argv[2];
@@ -52,7 +53,9 @@ async function applyCommand() {
 }
 
 async function loadConfig() {
-  const { default: config } = await import(resolve(process.cwd(), ".try.mjs"));
+  const { default: config } = await import(
+    pathToFileURL(resolve(process.cwd(), ".try.mjs"))
+  );
   return config;
 }
 

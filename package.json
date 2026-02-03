@@ -1,15 +1,18 @@
 {
   "name": "@embroider/try",
   "version": "1.0.0",
-  "repository": "https://github.com/embroider-build/try",
   "description": "Helper for trying multiple compatibility scenarios in CI",
-  "bin": "cli.js",
+  "keywords": [],
+  "repository": "https://github.com/embroider-build/try",
+  "license": "MIT",
+  "author": "Edward Faulkner <edward@eaf4.com>",
   "type": "module",
+  "bin": "cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Edward Faulkner <edward@eaf4.com>",
-  "license": "MIT",
+  "devDependencies": {
+    "release-plan": "^0.17.4"
+  },
   "packageManager": "pnpm@10.4.1"
 }

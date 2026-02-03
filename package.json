@@ -1,6 +1,7 @@
 {
   "name": "@embroider/try",
   "version": "1.0.0",
+  "repository": "https://github.com/embroider-build/try",
   "description": "Helper for trying multiple compatibility scenarios in CI",
   "bin": "cli.js",
   "type": "module",

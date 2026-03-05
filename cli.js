@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { resolve, dirname } from "node:path";
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { pathToFileURL } from "node:url";

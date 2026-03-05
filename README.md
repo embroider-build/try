@@ -4,15 +4,19 @@ A tiny utility to support matrix testing.
 
 ## List
 
-`pnpm -s @embroider/try list`
+```sh
+pnpx @embroider/try list
+```
 
 Processes your `.try.mjs` file and emits JSON that can be used in GitHub Actions to create your `strategy.matrix`.
 
 ## Apply
 
-`pnpm dlx @embroider/try apply $SCENARIO_NAME`
+```sh
+pnpx @embroider/try apply $SCENARIO_NAME
+```
 
-Applies a scenario to your project by editing package.json, etc. Use this before the regular `pnpm install` or `npm install` in order to test differing dependencies.
+Applies a scenario to your project by editing package.json, etc. Run this command before the regular `pnpm install` or `npm install` in order to test differing dependencies.
 
 ## Config File: .try.mjs
 

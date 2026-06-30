@@ -2,17 +2,13 @@
   "solution": {
     "@embroider/try": {
       "impact": "patch",
-      "oldVersion": "1.0.0",
-      "newVersion": "1.0.1",
+      "oldVersion": "1.0.1",
+      "newVersion": "1.0.2",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "patch",
           "reason": "Appears in changelog section :bug: Bug Fix"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :memo: Documentation"
         },
         {
           "impact": "patch",
@@ -22,5 +18,5 @@
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2026-02-03)\n\n* @embroider/try 1.0.1 (patch)\n\n#### :bug: Bug Fix\n* `@embroider/try`\n  * [#4](https://github.com/embroider-build/try/pull/4) Add repository field to package.json ([@ef4](https://github.com/ef4))\n\n#### :memo: Documentation\n* `@embroider/try`\n  * [#7](https://github.com/embroider-build/try/pull/7) adding a readme ([@ef4](https://github.com/ef4))\n\n#### :house: Internal\n* `@embroider/try`\n  * [#5](https://github.com/embroider-build/try/pull/5) adding release plan ([@ef4](https://github.com/ef4))\n\n#### Committers: 1\n- Edward Faulkner ([@ef4](https://github.com/ef4))\n"
+  "description": "## Release (2026-06-30)\n\n* @embroider/try 1.0.2 (patch)\n\n#### :bug: Bug Fix\n* `@embroider/try`\n  * [#9](https://github.com/embroider-build/try/pull/9) Add shebang for Node.js execution ([@NullVoxPopuli](https://github.com/NullVoxPopuli))\n\n#### :house: Internal\n* `@embroider/try`\n  * [#12](https://github.com/embroider-build/try/pull/12) update release-plan ([@mansona](https://github.com/mansona))\n\n#### Committers: 2\n- Chris Manson ([@mansona](https://github.com/mansona))\n- [@NullVoxPopuli](https://github.com/NullVoxPopuli)\n"
 }

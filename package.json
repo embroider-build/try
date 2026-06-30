@@ -1,6 +1,6 @@
 {
   "name": "@embroider/try",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helper for trying multiple compatibility scenarios in CI",
   "keywords": [],
   "repository": "https://github.com/embroider-build/try",

@@ -1,5 +1,21 @@
 # Changelog
 
+## Release (2026-06-30)
+
+* @embroider/try 1.0.2 (patch)
+
+#### :bug: Bug Fix
+* `@embroider/try`
+  * [#9](https://github.com/embroider-build/try/pull/9) Add shebang for Node.js execution ([@NullVoxPopuli](https://github.com/NullVoxPopuli))
+
+#### :house: Internal
+* `@embroider/try`
+  * [#12](https://github.com/embroider-build/try/pull/12) update release-plan ([@mansona](https://github.com/mansona))
+
+#### Committers: 2
+- Chris Manson ([@mansona](https://github.com/mansona))
+- [@NullVoxPopuli](https://github.com/NullVoxPopuli)
+
 ## Release (2026-02-03)
 
 * @embroider/try 1.0.1 (patch)
